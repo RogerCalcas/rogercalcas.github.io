@@ -436,6 +436,7 @@ span {
     padding: 3rem 5rem;
 }
 
+
 p,
 h4 {
     color: black;
@@ -452,7 +453,7 @@ h4 {
     font-weight: 600;
     max-height: 100px;
     line-height: 1.7;
-    margin: auto;
+    margin: center;
 }
 
 .projetos {
@@ -484,6 +485,7 @@ h4 {
     gap: 3rem;
 }
 
+
 .proj-item {
     min-height: 550px;
     max-width: 450px;
@@ -501,6 +503,7 @@ h4 {
     gap: 1.5rem;
     color: white;
     transition: 0.4s ease-in-out;
+    
 }
 
 .proj-item:hover {
@@ -508,6 +511,7 @@ h4 {
     transform: translateY(-10px)scale(1.03);
     box-shadow: 0 0 50px var(--main-color);
 }
+
 
 .proj-item h2 {
     font-size: 2.8rem;
@@ -517,6 +521,7 @@ h4 {
     font-size: 1.3rem;
     color: white;
 }
+
 
 #star {
     color: gold;
@@ -530,7 +535,7 @@ h4 {
 }
 
 .contato {
-    color: rgba( 0, 255, 238, 0.8);
+    color: rgba(0, 255, 238, 0.8);
 }
 
 .contato h2 {
@@ -538,7 +543,7 @@ h4 {
     color: white;
 }
 
-.contato h3{
+.contato h3 {
     color: var(--main-color);
     transition: 0.3s ease-in-out;
 }
@@ -642,56 +647,68 @@ h4 {
     color: white;
 }
 
-@media(max-width:1285px){
-    html{
+@media(max-width:1285px) {
+    html {
         font-size: 55%
     }
-    .servico-container{
+
+    .servico-container {
         padding-bottom: 7rem;
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 0 5rem;
     }
 }
 
-@media(max-width:991px){
-    header{
+@media(max-width:991px) {
+    header {
         padding: 2rem 3%;
     }
-    section{
+
+    section {
         padding: 10rem 3% 2rem;
     }
-    .item-cronograma::before{
+
+    .item-cronograma::before {
         left: 7px;
     }
-    .item-cronograma:nth-child(odd){
+
+    .item-cronograma:nth-child(odd) {
         padding-right: 0;
         text-align: left;
     }
+
     .item-cronograma:nth-child(odd),
-    .item-cronograma:nth-child(even){
+    .item-cronograma:nth-child(even) {
         padding-left: 37px;
     }
-    .ponto-cronograma{
+
+    .ponto-cronograma {
         left: 0;
     }
-    .servicos{
+
+    .servicos-info {
         padding-bottom: 7rem;
     }
-    .projetos .wrapper{
-        grid-template-columns: repeat(1,1fr);
+
+    .projetos .wrapper {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .contato form{
+
+    .contato form {
         flex-direction: column;
     }
-    .footer{
+
+    .footer {
         padding: 2rem 3%;
     }
 }
-@media(max-width:895px){
-    #menu-icon{
+
+@media(max-width:895px) {
+    #menu-icon {
         display: block;
     }
-    .navbar{
+
+    .navbar {
         position: absolute;
         top: 100%;
         right: 0;
@@ -704,44 +721,46 @@ h4 {
         border-bottom: 2px solid var(--main-color);
         display: none;
     }
-    .navbar .ativar{
+
+    .navbar .ativar {
         display: block;
     }
-    .navbar a{
+
+    .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         color: white;
     }
 
-    .home{
+    .home {
         flex-direction: column-reverse;
         margin: 5rem 4rem;
     }
 
-    .conteudo-inicial h3{
+    .conteudo-inicial h3 {
         font-size: 2.6rem;
     }
-    
-    .conteudo-inicial h1{
+
+    .conteudo-inicial h1 {
         font-size: 8rem;
-        margin-top:3rem;
+        margin-top: 3rem;
     }
 
-    .conteudo-inicial p{
+    .conteudo-inicial p {
         max-width: 600px;
         margin: 0 auto;
     }
 
-    .home-img img{
+    .home-img img {
         width: 56vw;
     }
 
-    .servico h2{
+    .servico h2 {
         margin-bottom: 3rem;
     }
 
-    .servico-container{
-        grid-template-columns: repeat(1,1fr);
+    .servico-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
